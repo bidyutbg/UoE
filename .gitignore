@@ -1,0 +1,21 @@
+# NetCDF / model data
+*.nc
+*.grib
+*.zarr
+
+# Figures (optional)
+figures/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Large files
+*.hdf5
+*.pkl
+
+# Temporary
+*.log
