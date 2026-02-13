@@ -5,6 +5,14 @@
 
 # Figures (optional)
 figures/
+.pdf
+.png
+.jpeg
+.jpg
+.JPG
+.JPEG
+.ps
+.eps
 
 # Jupyter
 .ipynb_checkpoints/
