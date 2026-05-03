@@ -43,7 +43,20 @@ def open_files_CESM_ssp585(path):
     path = Path(path)
 
     # Define the exact files you want
-    files_to_read = list(path.glob("*_201501-210012.nc"))
+    # files_to_read = list(path.glob("*_201501-210012.nc"))
+    files_to_read = list(path.glob("*.nc"))
+    # Open only these files with xarray
+    return xr.open_mfdataset([str(f) for f in files_to_read], combine="by_coords", parallel=True)
+
+def open_files_CESM_ssp585_new(path):
+    """
+    Open only the relevant CESM2-WACCM ssp585 files.
+    Reads all NC files.
+    """
+    path = Path(path)
+
+    # Define the exact files you want
+    files_to_read = list(path.glob("*.nc"))
     # Open only these files with xarray
     return xr.open_mfdataset([str(f) for f in files_to_read], combine="by_coords", parallel=True)
 
