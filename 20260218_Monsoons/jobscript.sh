@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name="RainySeason_TRMM"
+#SBATCH --job-name="LS"
 #SBATCH --time=04:00:00
 #SBATCH --account=sheat_mip
 #SBATCH --partition=standard
@@ -10,4 +10,4 @@
 
 cd /home/users/bidyut/UoE/20260218_Monsoons
 module load jaspy
-python /home/users/bidyut/UoE/20260218_Monsoons/20260227_RainySeason_TRMM.py
+python /home/users/bidyut/UoE/20260218_Monsoons/20260528_PR_Length_n_Strength.py
